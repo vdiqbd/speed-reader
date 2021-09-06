@@ -1,0 +1,79 @@
+@media screen and (max-width: 655px) {
+	button {
+		width: 40%;
+	}
+
+	.speed input {
+		width: 15%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	header {
+		height: 60px;
+		font-size: 2em;
+	}
+
+	.container {
+		padding: 10px 0;
+	}
+
+	button {
+		width: 50%;
+	}
+
+	.speed input {
+		width: 18%;
+	}
+
+	.word-display {
+		font-size: 1.5em;
+	}
+
+	.bi-pause, .bi-play {
+		width: 35px;
+		height: 35px;
+		bottom: 45px;
+	}
+
+	#left, #right {
+		width: 25px;
+		height: 25px;
+	}
+
+	#left {
+		bottom: 110px; right: 35px;
+	}
+
+	#right {
+		right: 35px;
+	}
+}
+
+@media screen and (max-width: 395px) {
+	.word-display {
+		font-size: 1.3em;
+	}
+
+	button {
+		width: 70%;
+	}
+
+	#svg {
+		position: fixed;
+		bottom: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 80%;
+		height: 40px;
+	}
+
+	.bi-pause, .bi-play, #left, #right {
+		position: static;
+	}
+
+	.bi-pause, .bi-play {
+		margin: 0 10px;
+	}
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="public/style.css">
+	<link rel="stylesheet" type="text/css" href="public/media_queries.css">
+	<link rel="icon" type="image/png" href="public/three.png">
+	<script src="public/script.js" type="text/javascript" defer></script>
+	<title>Speed Reader</title>
+</head>
+<body>
+	<header>
+		SPEED READER
+	</header>
+	<div class="container">
+		<div class="speed">
+			<input type="text" placeholder="WPM" id="speed-input">
+		</div>
+
+		<div class="text-input">
+			<textarea placeholder="Paste your text here"></textarea>
+			<button>Read FAST!</button>
+			<div id="svg">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" id="left" class="bi bi-caret-left" viewBox="0 0 16 16">
+					<path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+				</svg>
+				
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" id="pause" class="bi bi-pause" viewBox="0 0 16 16">
+					<path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"/>
+				</svg>
+
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" id="play" class="bi bi-play" viewBox="0 0 16 16">
+					<path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+				</svg>
+
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" id="right" class="bi bi-caret-right" viewBox="0 0 16 16">
+					<path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+				</svg>
+			</div>
+		</div>
+
+		<div class="word-display" id="word-display"></div>
+	</div>
+
+	<footer></footer>
+</body>
+</html>
