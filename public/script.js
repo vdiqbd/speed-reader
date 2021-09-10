@@ -14,7 +14,7 @@ leftArrow.style.display = 'none';
 rightArrow.style.display = 'none';
 
 speed.addEventListener('keyup', () => {
-	if (speed.value < 60) {
+	if (speed.value < 60 && parseInt(speed.value) > 60) {
 		speed.style.transition = 'background 2s';
 		speed.style.background = 'pink';
 	} else {
